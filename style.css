@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #001133;
+}
+
+#viewbox {
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    grid-template-rows: 100px 500px auto 50px;
+    grid-template-areas:
+        "menu_area menu_area menu_area"
+        "header header header"
+        ". main sidebar"
+        "footer footer footer";
+}
+
+#menu_box {
+    grid-area: menu_area;
+    border-bottom: 1px solid black;
+    background-color: #001133;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#header_box {
+    grid-area: header;
+    background-image: url("images/102-1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-bottom: 1px solid black;
+}
+
+#main_box {
+    grid-area: main;
+}
+
+#sidebar_box {
+    grid-area: sidebar;
+}
+
+#footer_box {
+    grid-area: footer;
+    background-color: white;
+    border-top: 1px solid black;
+}
+
+#logo_holder {
+    margin-top: 0px;
+    margin-left: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#logo {
+}
+
+#logo_name {
+    padding-left: 25px;
+    color: white;
+    font-weight: 500;
+}
+
+#menu_holder {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: white;
+}
+
+.boxes {
+}
+
+.menu_item {
+    padding-right: 15px;
+    color: white;
+    text-decoration: none;
+}
+
+.menu_item:hover {
+    color: #0066ff;
+}
+
+.content_tile {
+    margin: 5px;
+    border: 1px solid black;
+    background-color: white;
+    color: #001133;;
+}
+
+.title_box {
+    margin-top: 25px; 
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.content_holder {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto;
+    text-align: center;
+}
+
+.content_box1 {
+    grid-column: 1;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 50px;
+}
+
+.content_box2 {
+    grid-column: 2;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 50px;
+}
+
+.content_holder_single {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+    text-align: center;
+}
+
+.content_box {
+    grid-column: 1;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 50px;
+}
