@@ -1,0 +1,23 @@
+#logo-image {
+    display: inline-block;
+    float: left;
+    font-size: 24px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.card .card-content a {
+    color: white;
+}
+
+.card .card-title {
+    font-size: 19px;
+    font-weight: 600;
+    text-shadow: 0px 0px 3px black;
+}
+
+.card .card-action a {
+    text-shadow: 0px 0px 2px grey;
+}
+
+
